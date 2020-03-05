@@ -41,7 +41,13 @@ public class Libretto {
   * @return
   */
  public boolean esisteGiaVoto(Voto v) {
-	 
+	 int pos = this.voti.indexOf(v);
+	 if (pos==-1) return false;
+	 else {
+		 return (v.getPunti()== this.voti.get(pos).getPunti());
+		
+	 }
+	 /*
 	  Voto trovato = this.cercaEsame(v.getCorso());
 	  if (trovato ==null) {
 		  return false;
@@ -50,7 +56,7 @@ public class Libretto {
 	  if (trovato.getPunti()==v.getPunti()){
 		  return true;
 		  }else
-	      return false;
+	      return false;*/
  }
  
  
