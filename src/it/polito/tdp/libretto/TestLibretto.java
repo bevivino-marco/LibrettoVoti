@@ -15,12 +15,18 @@ public class TestLibretto {
 		libr.add( new Voto(25, "Geometria", LocalDate.of(2018, 6, 4)) );
 		libr.add( new Voto(28, "Programmazione ad oggetti", LocalDate.of(2017, 9, 3)) );
 		libr.add( new Voto(18, "Economia", LocalDate.of(2018, 2, 5)) );
-		libr.add( new Voto(30, "RIcerca operativa", LocalDate.of(2019, 8, 15)) );
+		libr.add( new Voto(30, "Ricerca operativa", LocalDate.of(2019, 8, 15)) );
 		libr.add( new Voto(25, "Sistemi di produzione", LocalDate.of(2019, 6, 15)) );
 		libr.add( new Voto(20, "Sistemi telematici", LocalDate.of(2019, 1, 15)) );
    
 		List<Voto> venticinque = libr.cercaVoti(25);
 	    System.out.println(venticinque);
+	    
+	    Voto a1 = libr.cercaEsame("Analisi I");
+	    Voto a3 = libr.cercaEsame("Analisi III");
+	    System.out.println("\n+++++++++++++\n"+a1);
+	    System.out.println(a3);
+	
 	}
 
 }
